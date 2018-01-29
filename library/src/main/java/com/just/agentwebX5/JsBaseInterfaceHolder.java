@@ -49,7 +49,7 @@ public abstract class JsBaseInterfaceHolder implements JsInterfaceHolder{
     }
 
     protected boolean checkSecurity(){
-        return mSecurityType!= AgentWebX5.SecurityType.strict ?true: AgentWebX5Config.WEBVIEW_TYPE== AgentWebX5Config.WEBVIEW_AGENTWEB_SAFE_TYPE?true:Build.VERSION.SDK_INT>Build.VERSION_CODES.JELLY_BEAN_MR1;
+        return mSecurityType!= AgentWebX5.SecurityType.strict ?true: AgentWebX5Config.WEBVIEW_TYPE== AgentWebX5Config.WEBVIEW_AGENTWEB_SAFE_TYPE?true:Build.VERSION.SDK_INT>=Build.VERSION_CODES.JELLY_BEAN_MR1;
     }
 
 
