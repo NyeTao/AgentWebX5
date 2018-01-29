@@ -90,7 +90,7 @@ public class AgentWebX5 {
         this.mWebSettings = agentBuilder.mWebSettings;
         this.mIEventHandler = agentBuilder.mIEventHandler;
         TAG_TARGET = ACTIVITY_TAG;
-        if (agentBuilder.mJavaObject != null && agentBuilder.mJavaObject.isEmpty())
+        if (agentBuilder.mJavaObject != null && !agentBuilder.mJavaObject.isEmpty())
             this.mJavaObjects.putAll((Map<? extends String, ?>) agentBuilder.mJavaObject);
         this.mChromeClientCallbackManager = agentBuilder.mChromeClientCallbackManager;
         this.mWebViewClientCallbackManager = agentBuilder.mWebViewClientCallbackManager;
@@ -127,7 +127,7 @@ public class AgentWebX5 {
         this.mWebViewClient = agentBuilderFragment.mWebViewClient;
         mAgentWebX5 = this;
         this.mWebSettings = agentBuilderFragment.mWebSettings;
-        if (agentBuilderFragment.mJavaObject != null && agentBuilderFragment.mJavaObject.isEmpty())
+        if (agentBuilderFragment.mJavaObject != null && !agentBuilderFragment.mJavaObject.isEmpty())
             this.mJavaObjects.putAll((Map<? extends String, ?>) agentBuilderFragment.mJavaObject);
         this.mChromeClientCallbackManager = agentBuilderFragment.mChromeClientCallbackManager;
         this.mWebViewClientCallbackManager = agentBuilderFragment.mWebViewClientCallbackManager;
